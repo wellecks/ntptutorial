@@ -1,0 +1,734 @@
+{
+    "results": [
+        {
+            "theorem": "NonemptyInterval.pure_injective",
+            "proof": [
+                "unfold pure",
+                "simp [Injective]"
+            ],
+            "score": 0.06666778214275837,
+            "success": true
+        },
+        {
+            "theorem": "Finset.sym2_univ",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.057796161621809006,
+            "success": true
+        },
+        {
+            "theorem": "Subsemigroup.monotone_map",
+            "proof": [
+                "intro m n h",
+                "rintro _ \u27e8x, hx, rfl\u27e9",
+                "exact \u27e8x, h hx, rfl\u27e9"
+            ],
+            "score": 0.10295426659286022,
+            "success": true
+        },
+        {
+            "theorem": "MeasureTheory.Measurable.comp_nullMeasurable",
+            "proof": [
+                "exact hg.comp hf"
+            ],
+            "score": 0.03515021502971649,
+            "success": true
+        },
+        {
+            "theorem": "Finset.prod_pow_boole",
+            "proof": [
+                "split_ifs with h <;> simp [h]"
+            ],
+            "score": 0.022501567378640175,
+            "success": true
+        },
+        {
+            "theorem": "isOpenMap_div_right",
+            "proof": [
+                "simp only [div_eq_mul_inv, isOpenMap_mul_right]"
+            ],
+            "score": 0.06886392831802368,
+            "success": true
+        },
+        {
+            "theorem": "Fin.Ici_eq_finset_subtype",
+            "proof": [
+                "ext",
+                "simp"
+            ],
+            "score": 0.04452210105955601,
+            "success": true
+        },
+        {
+            "theorem": "Polynomial.toFinsupp_zero",
+            "proof": [
+                "cases p",
+                "rfl"
+            ],
+            "score": 0.0956510566174984,
+            "success": true
+        },
+        {
+            "theorem": "Continuous.sum_map",
+            "proof": [
+                "continuity"
+            ],
+            "score": 0.04079575836658478,
+            "success": true
+        },
+        {
+            "theorem": "Set.smul_set_inter\u2080",
+            "proof": [
+                "ext",
+                "simp [mem_smul_set_iff_inv_smul_mem\u2080 ha]"
+            ],
+            "score": 0.07694211788475513,
+            "success": true
+        },
+        {
+            "theorem": "Subtype.coe_image_univ",
+            "proof": [
+                "simp [image_univ]"
+            ],
+            "score": 0.08483579009771347,
+            "success": true
+        },
+        {
+            "theorem": "AlgEquiv.toLinearEquiv_trans",
+            "proof": [
+                "ext <;> simp"
+            ],
+            "score": 0.02171783335506916,
+            "success": true
+        },
+        {
+            "theorem": "LieSubmodule.coe_add",
+            "proof": [
+                "simp"
+            ],
+            "score": 0.014644467271864414,
+            "success": true
+        },
+        {
+            "theorem": "IsAntichain.preimage_iso",
+            "proof": [
+                "intro b\u2081 b\u2082 hb\u2081 hb\u2082",
+                "simpa using ht b\u2082 hb\u2082"
+            ],
+            "score": 0.06171885505318642,
+            "success": true
+        },
+        {
+            "theorem": "PrimeSpectrum.comap_asIdeal",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.026252638548612595,
+            "success": true
+        },
+        {
+            "theorem": "MonoidWithZeroHom.coe_mk",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.0029693180695176125,
+            "success": true
+        },
+        {
+            "theorem": "OreLocalization.one_def",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.05921659246087074,
+            "success": true
+        },
+        {
+            "theorem": "LinearPMap.mem_domain_of_mem_graph",
+            "proof": [
+                "rw [mem_graph_iff] at h",
+                "rcases h with \u27e8x', rfl, h'\u27e9",
+                "exact x'.2"
+            ],
+            "score": 0.04480455256998539,
+            "success": true
+        },
+        {
+            "theorem": "Vector.empty_toList_eq_ff",
+            "proof": [
+                "cases v",
+                "simp [toList, List.isEmpty]",
+                "split",
+                "all_goals tauto"
+            ],
+            "score": 0.10822779312729836,
+            "success": true
+        },
+        {
+            "theorem": "Mathlib.Tactic.IntervalCases.of_not_lt_right",
+            "proof": [
+                "exact eq \u25b8 le_of_not_lt h"
+            ],
+            "score": 0.09517894685268402,
+            "success": true
+        },
+        {
+            "theorem": "List.Pairwise.and",
+            "proof": [
+                "induction hR",
+                "case nil => simp",
+                "simp_all"
+            ],
+            "score": 0.06705544702708721,
+            "success": true
+        },
+        {
+            "theorem": "Int.lcm_comm",
+            "proof": [
+                "rw [Int.lcm]",
+                "apply Nat.lcm_comm"
+            ],
+            "score": 0.11606144160032272,
+            "success": true
+        },
+        {
+            "theorem": "Finsupp.ker_lsingle",
+            "proof": [
+                "ext",
+                "simp"
+            ],
+            "score": 0.022008214611560106,
+            "success": true
+        },
+        {
+            "theorem": "Setoid.ext_iff",
+            "proof": [
+                "constructor",
+                "rintro rfl _ _",
+                "rfl",
+                "exact fun h => Setoid.ext h"
+            ],
+            "score": 0.15640811529010534,
+            "success": true
+        },
+        {
+            "theorem": "Set.Finite.toFinset_offDiag",
+            "proof": [
+                "ext",
+                "simp"
+            ],
+            "score": 0.010765764862298965,
+            "success": true
+        },
+        {
+            "theorem": "Finsupp.embDomain_inj",
+            "proof": [
+                "constructor",
+                "apply embDomain_injective",
+                "aesop"
+            ],
+            "score": 0.06850366480648518,
+            "success": true
+        },
+        {
+            "theorem": "PowerSeries.smul_eq_C_mul",
+            "proof": [
+                "simp [PowerSeries.ext_iff]"
+            ],
+            "score": 0.09802203625440598,
+            "success": true
+        },
+        {
+            "theorem": "OrderHom.orderHom_eq_id",
+            "proof": [
+                "apply Subsingleton.elim"
+            ],
+            "score": 0.032435908913612366,
+            "success": true
+        },
+        {
+            "theorem": "Behrend.sphere_subset_box",
+            "proof": [
+                "simp [sphere, box]"
+            ],
+            "score": 0.07471803575754166,
+            "success": true
+        },
+        {
+            "theorem": "Polynomial.aeval_algHom",
+            "proof": [
+                "ext",
+                "simp"
+            ],
+            "score": 0.008154324954375625,
+            "success": true
+        },
+        {
+            "theorem": "OrderMonoidWithZeroHom.comp_mul",
+            "proof": [
+                "ext <;> simp"
+            ],
+            "score": 0.03107544593513012,
+            "success": true
+        },
+        {
+            "theorem": "Dfinsupp.mapRange_apply",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.021800542250275612,
+            "success": true
+        },
+        {
+            "theorem": "Submonoid.center_toSubsemigroup",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.1160610243678093,
+            "success": true
+        },
+        {
+            "theorem": "Subgroup.toSubmonoid_eq",
+            "proof": [
+                "constructor",
+                "swap",
+                "rintro rfl",
+                "rfl",
+                "apply toSubmonoid_injective"
+            ],
+            "score": 0.10547792294528335,
+            "success": true
+        },
+        {
+            "theorem": "MonoidHom.prod_comp_prodMap",
+            "proof": [
+                "ext <;> simp"
+            ],
+            "score": 0.010844556614756584,
+            "success": true
+        },
+        {
+            "theorem": "LocalEquiv.EqOnSource.source_eq",
+            "proof": [
+                "cases e",
+                "cases e'",
+                "exact h.1"
+            ],
+            "score": 0.039306161692366004,
+            "success": true
+        },
+        {
+            "theorem": "ENNReal.toNNReal_le_toNNReal",
+            "proof": [
+                "rw [\u2190 ENNReal.coe_le_coe, coe_toNNReal ha, coe_toNNReal hb]"
+            ],
+            "score": 0.05514577403664589,
+            "success": true
+        },
+        {
+            "theorem": "DirectSum.toAddMonoidAlgebra_toDirectSum",
+            "proof": [
+                "simp [DirectSum.toAddMonoidAlgebra]",
+                "simp [AddMonoidAlgebra.toDirectSum]"
+            ],
+            "score": 0.07822933420538902,
+            "success": true
+        },
+        {
+            "theorem": "bddBelow_Ici",
+            "proof": [
+                "use a",
+                "simp [lowerBounds]"
+            ],
+            "score": 0.09038608893752098,
+            "success": true
+        },
+        {
+            "theorem": "Int.lor_bit",
+            "proof": [
+                "dsimp [lor]",
+                "cases a <;> cases b <;> simp",
+                "all_goals cases m <;> cases n <;> simp"
+            ],
+            "score": 0.060909992549568415,
+            "success": true
+        },
+        {
+            "theorem": "IndexedPartition.some_index",
+            "proof": [
+                "cases hs",
+                "simp",
+                "aesop"
+            ],
+            "score": 0.10609651356935501,
+            "success": true
+        },
+        {
+            "theorem": "nndist_vadd_right",
+            "proof": [
+                "simp [nndist]",
+                "ext",
+                "simp",
+                "rw [dist_comm, dist_vadd_left]"
+            ],
+            "score": 0.06943780835717916,
+            "success": true
+        },
+        {
+            "theorem": "Irrational.ne_nat",
+            "proof": [
+                "rw [Irrational] at h",
+                "rintro rfl",
+                "exact h (Set.mem_range_self _)"
+            ],
+            "score": 0.23603598587214947,
+            "success": true
+        },
+        {
+            "theorem": "StarSubalgebra.subset_adjoin",
+            "proof": [
+                "simp [subset_adjoin]",
+                "tauto"
+            ],
+            "score": 0.05541197769343853,
+            "success": true
+        },
+        {
+            "theorem": "UniqueFactorizationMonoid.normalizedFactors_one",
+            "proof": [
+                "simp [normalizedFactors]"
+            ],
+            "score": 0.035825345665216446,
+            "success": true
+        },
+        {
+            "theorem": "Filter.bliminf_eq_liminf_subtype",
+            "proof": [
+                "simp [bliminf_eq, liminf_eq]",
+                "congr!",
+                "aesop"
+            ],
+            "score": 0.09382953867316246,
+            "success": true
+        },
+        {
+            "theorem": "Set.biUnion_singleton",
+            "proof": [
+                "simp"
+            ],
+            "score": 0.002082447987049818,
+            "success": true
+        },
+        {
+            "theorem": "RightOrdContinuous.iterate",
+            "proof": [
+                "induction' n with n ih",
+                "case zero => exact RightOrdContinuous.id \u03b1",
+                "exact ih.comp hf"
+            ],
+            "score": 0.08558873645961285,
+            "success": true
+        },
+        {
+            "theorem": "one_le_zpow",
+            "proof": [
+                "lift n to \u2115 using hn",
+                "rw [zpow_ofNat]",
+                "exact one_le_pow_of_one_le' H n"
+            ],
+            "score": 0.0882943207398057,
+            "success": true
+        },
+        {
+            "theorem": "not_lt_zero'",
+            "proof": [
+                "simp"
+            ],
+            "score": 0.03989856690168381,
+            "success": true
+        },
+        {
+            "theorem": "AlgEquiv.toLinearMap_injective",
+            "proof": [
+                "intro f g h",
+                "ext",
+                "rw [\u2190 toLinearMap_apply, \u2190 toLinearMap_apply, h]"
+            ],
+            "score": 0.04303271742537618,
+            "success": true
+        },
+        {
+            "theorem": "Algebra.algebraMap_ofSubsemiring_apply",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.017106426879763603,
+            "success": true
+        },
+        {
+            "theorem": "PiTensorProduct.lift_tprod",
+            "proof": [
+                "ext <;> simp"
+            ],
+            "score": 0.026965346187353134,
+            "success": true
+        },
+        {
+            "theorem": "div_eq_iff_mul_eq",
+            "proof": [
+                "rw [div_eq_iff hb]",
+                "rw [eq_comm]"
+            ],
+            "score": 0.05084596015512943,
+            "success": true
+        },
+        {
+            "theorem": "ENNReal.one_lt_two",
+            "proof": [
+                "norm_num"
+            ],
+            "score": 0.004520223010331392,
+            "success": true
+        },
+        {
+            "theorem": "MeasureTheory.volume_preserving_finTwoArrow",
+            "proof": [
+                "haveI : Encodable \u03b9 := Fintype.toEncodable \u03b9",
+                "apply measurePreserving_finTwoArrow"
+            ],
+            "score": 0.07828811183571815,
+            "success": true
+        },
+        {
+            "theorem": "Subsingleton.eq_univ_of_nonempty",
+            "proof": [
+                "rintro \u27e8x, hx\u27e9",
+                "refine' eq_univ_iff_forall.mpr fun y => _",
+                "rwa [Subsingleton.elim y x]"
+            ],
+            "score": 0.171775184571743,
+            "success": true
+        },
+        {
+            "theorem": "Complex.two_cos",
+            "proof": [
+                "rw [two_mul]",
+                "simp [cos]"
+            ],
+            "score": 0.15968229621648788,
+            "success": true
+        },
+        {
+            "theorem": "IsLocalization.map_mk'",
+            "proof": [
+                "apply IsLocalization.lift_mk'"
+            ],
+            "score": 0.02295919507741928,
+            "success": true
+        },
+        {
+            "theorem": "Subsemigroup.coe_comap",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.03112742491066456,
+            "success": true
+        },
+        {
+            "theorem": "CategoryTheory.LaxMonoidalFunctor.prod'_\u03bc",
+            "proof": [
+                "dsimp [prod']",
+                "simp"
+            ],
+            "score": 0.021082513965666294,
+            "success": true
+        },
+        {
+            "theorem": "Matrix.SpecialLinearGroup.coe_int_neg",
+            "proof": [
+                "ext",
+                "simp"
+            ],
+            "score": 0.0304072555154562,
+            "success": true
+        },
+        {
+            "theorem": "ENNReal.toReal_nonneg",
+            "proof": [
+                "simp [ENNReal.toReal]"
+            ],
+            "score": 0.05232922360301018,
+            "success": true
+        },
+        {
+            "theorem": "Fin.le_coe_natAdd",
+            "proof": [
+                "simp"
+            ],
+            "score": 0.05793900787830353,
+            "success": true
+        },
+        {
+            "theorem": "SemiconjBy.inv_inv_symm",
+            "proof": [
+                "intro h",
+                "simp [h]"
+            ],
+            "score": 0.12453563511371613,
+            "success": true
+        },
+        {
+            "theorem": "nhds_ofAdd",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.03388547897338867,
+            "success": true
+        },
+        {
+            "theorem": "MatrixEquivTensor.invFun_zero",
+            "proof": [
+                "simp [invFun]"
+            ],
+            "score": 0.018612481653690338,
+            "success": true
+        },
+        {
+            "theorem": "List.toFinset_reverse",
+            "proof": [
+                "simp [toFinset]"
+            ],
+            "score": 0.026263730600476265,
+            "success": true
+        },
+        {
+            "theorem": "CategoryTheory.Monoidal.leftUnitor_hom_app",
+            "proof": [
+                "dsimp [leftUnitor]"
+            ],
+            "score": 0.01946549117565155,
+            "success": true
+        },
+        {
+            "theorem": "List.sum_smul",
+            "proof": [
+                "induction' l with hd tl hl",
+                "simp",
+                "simp [add_smul, hl]"
+            ],
+            "score": 0.056858822237700224,
+            "success": true
+        },
+        {
+            "theorem": "ProbabilityTheory.kernel.integral_const",
+            "proof": [
+                "rw [kernel.const_apply]"
+            ],
+            "score": 0.0064316014759242535,
+            "success": true
+        },
+        {
+            "theorem": "CauSeq.coe_sup",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.0693473070859909,
+            "success": true
+        },
+        {
+            "theorem": "MeasureTheory.NullMeasurableSet.insert",
+            "proof": [
+                "unfold NullMeasurableSet",
+                "rw [insert_eq]",
+                "measurability"
+            ],
+            "score": 0.08922873809933662,
+            "success": true
+        },
+        {
+            "theorem": "Set.subset_iInter\u2082",
+            "proof": [
+                "intro x hx",
+                "exact mem_iInter.2 fun i => mem_iInter.2 fun j => h i j hx"
+            ],
+            "score": 0.042423089034855366,
+            "success": true
+        },
+        {
+            "theorem": "ClopenUpperSet.coe_mk",
+            "proof": [
+                "rfl"
+            ],
+            "score": 0.01648038811981678,
+            "success": true
+        },
+        {
+            "theorem": "IsLprojection.compl_mul",
+            "proof": [
+                "simp [sub_mul]"
+            ],
+            "score": 0.061795979738235474,
+            "success": true
+        },
+        {
+            "theorem": "Equiv.mulLeft_symm_apply",
+            "proof": [
+                "simp [Equiv.mulLeft]"
+            ],
+            "score": 0.028932297602295876,
+            "success": true
+        },
+        {
+            "theorem": "Multiset.map_hcongr",
+            "proof": [
+                "subst h",
+                "revert hf",
+                "simp (config := { contextual := true }) [heq_iff_eq]"
+            ],
+            "score": 0.1003159754909575,
+            "success": true
+        },
+        {
+            "theorem": "EMetric.le_infEdist",
+            "proof": [
+                "simp [infEdist]"
+            ],
+            "score": 0.044103752821683884,
+            "success": true
+        },
+        {
+            "theorem": "DifferentiableOn.const_smul",
+            "proof": [
+                "intro y hy",
+                "rcases h y hy with \u27e8f', hf'\u27e9",
+                "exact hf'.differentiableWithinAt.const_smul _"
+            ],
+            "score": 0.043711879290640354,
+            "success": true
+        },
+        {
+            "theorem": "Set.diff_empty",
+            "proof": [
+                "simp [diff_eq]"
+            ],
+            "score": 0.028194859623908997,
+            "success": true
+        },
+        {
+            "theorem": "Equiv.symm_apply_apply",
+            "proof": [
+                "cases e",
+                "aesop"
+            ],
+            "score": 0.09066382050514221,
+            "success": true
+        }
+    ],
+    "args": {
+        "model_name": "wellecks/llmstep-mathlib4-pythia2.8b",
+        "dataset_path": "./data/val.json",
+        "max_iters": 50,
+        "num_samples": 32,
+        "num_examples": 200
+    }
+}
