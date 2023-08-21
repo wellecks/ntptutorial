@@ -6,7 +6,7 @@ This tutorial introduces two research threads in neural theorem proving via inte
 
 ## Part I : Next-step suggestion
 
-Builds a neural next-step suggestion tool, introducing key concepts and overviewing past work in neural theorem proving along the way.
+Builds a neural next-step suggestion tool, introducing concepts and past work in neural theorem proving along the way.
 
 <img src="./partI_nextstep/notebooks/images/llmsuggest/llmsuggest.gif" width="350"/>
 
@@ -44,13 +44,13 @@ Please follow the setup instructions in [`partII_dsp/README.md`](./partII_dsp/RE
 -------
 ### History
 These materials were originally developed as part of a IJCAI 2023 tutorial. \
-Slides for the 1 hour summary presentation given at IJCAI 2023 are coming soon. 
+Slides for the 1 hour summary presentation given at IJCAI 2023 are [here](https://wellecks.com/data/welleck2023ntp_tutorial.pdf). 
 
 #### Citation
 
 If you find this tutorial or repository useful in your work, please cite:
 ```
-@misc{llmstep,
+@misc{ntptutorial,
   author = {Sean Welleck},
   title = {Neural theorem proving tutorial},
   year = {2023},
